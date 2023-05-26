@@ -8,6 +8,7 @@ public class Principal {
 		
 		TelaLogin telaLogin = new TelaLogin();
 		telaLogin.telaAutenticacaoUsuario();
+
 		
 	}
 

@@ -8,6 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import controller.ControladorTelaLogin;
+
 public class TelaLogin {
 	
 	
@@ -42,8 +44,9 @@ public class TelaLogin {
 		frameTelaLogin.add(painelTelaLogin);
 		frameTelaLogin.setVisible(true);
 		
-		
-		
+		ControladorTelaLogin controladorTelaLogin =  new ControladorTelaLogin(frameTelaLogin, respostaCampoUsuario,
+				respostaCampoSenha);
+		botaoEntrar.addActionListener(controladorTelaLogin);
 	}
 
 }
